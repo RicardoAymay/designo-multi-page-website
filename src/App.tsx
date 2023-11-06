@@ -1,6 +1,12 @@
+import { Outlet } from "react-router-dom"
+
 const App = () => {
   return (
-    <div>App</div>
+    
+    <div> 
+      <h1>React Router</h1>
+      <Outlet />
+    </div>
   )
 }
 
