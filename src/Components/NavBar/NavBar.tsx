@@ -1,0 +1,16 @@
+import { Link } from "react-router-dom"
+import logo from "../../assets/shared/desktop/logo-light.png"
+const NavBar = () => {
+  return (
+    <div>
+        <Link to={"/"}><img src={logo} alt="Logo from DESIGNO!"/></Link>
+        <nav>
+            <Link className="navlink" to={"about"}> OUR COMPANY </Link>
+            <Link className="navlink" to={"location"}> LOCATIONS </Link>
+            <Link className="navlink" to={"contact"}> CONTACT </Link>
+        </nav>
+    </div>
+  )
+}
+
+export default NavBar
