@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import logo from "../../assets/shared/desktop/logo-light.png"
+import "./navBar.sass"
 const NavBar = () => {
   return (
-    <div>
+    <div className="navContainer">
         <Link to={"/"}><img src={logo} alt="Logo from DESIGNO!"/></Link>
         <nav>
             <Link className="navlink" to={"about"}> OUR COMPANY </Link>
