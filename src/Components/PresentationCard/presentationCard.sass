@@ -10,10 +10,11 @@
     border-radius: 15px
     position: absolute
     width: 100%
-    max-width: calc( 1440px*0.865 )
-
+    max-width: 1111px
+    overflow: hidden
+    
     .textSide
-        width: 50%
+        width: 44.5%
         position: absolute
         color: variables.$white
         display: flex
@@ -21,7 +22,8 @@
         align-items: flex-start
         gap: 30px
         margin-left: 130px
-        transform: translateX(-90%)
+        transform: translateX(-100%)
+        z-index: 1
         h3
             font-size: variables.$heading1
             line-height:55px
@@ -36,7 +38,7 @@
             border-radius: 6px
             background-color: variables.$white
     .imgsSide
-        width: 51.5%
+        width: 55.5%
         height: 100%
         position: absolute
         height: 100%
@@ -46,6 +48,7 @@
             max-width: 640px
         #presentationCell
           position: absolute
+          
   
             
         
