@@ -1,20 +1,15 @@
-import NavBar from "../Components/NavBar/NavBar"
-import PresentationCard from '../Components/PresentationCard/PresentationCard';
-
+import NavBar from "../Components/NavBar/NavBar";
+import PresentationCard from "../Components/PresentationCard/PresentationCard";
+import SoftCards from "../Components/SoftCards/SoftCards";
 
 const Home = () => {
   return (
+    <>
+      <NavBar />
+      <PresentationCard />
+      <SoftCards />
+    </>
+  );
+};
 
-    <div className="container"> 
-    <NavBar />
-    
-
-    <PresentationCard/>
-    
-    
-    
-  </div> 
-  )
-}
-
-export default Home
+export default Home;
