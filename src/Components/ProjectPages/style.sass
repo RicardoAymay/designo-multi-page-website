@@ -1,0 +1,72 @@
+@use "../../styles/variables"
+
+.projectPages
+    width: 100%
+    max-width: 1112px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    // background-color: variables.$peach
+
+    .web, .app, .graphic
+        width: 100%
+        max-width: 541px
+        height: 308px
+        overflow: hidden
+        border-radius: 8px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &:hover
+            transition: 0.5s
+            opacity: 0.5
+            //Criar o hover que deixa a area onde o mouse esta na cor Peach
+
+        &>img
+            width: 100%
+            height: 100%
+            background-repeat: none
+            object-fit: cover
+
+        &>div
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position: absolute
+            z-index: 1
+
+            h1
+                color: variables.$white
+                font-size: variables.$heading2
+                font-weight: variables.$medium
+                line-height: 48px
+                letter-spacing: 2px
+
+            button
+                font-size: variables.$body1
+                font-weight: variables.$medium
+                color: variables.$white
+                letter-spacing: 5px
+
+                //Adicionar icone de arrow no botão
+                // &>svg
+                //     width: 8px
+                //     height: 4px
+                //     color: variables.$peach
+
+                // &:hover
+                //Adicionar um hover com a cor peach
+
+    .web
+        height: 640px
+
+    .container
+        width: 100%
+        max-width: 541px
+        height: 640px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
