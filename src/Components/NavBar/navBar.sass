@@ -1,19 +1,23 @@
 @use '../../styles/variables'
 
-.navContainer
+%navContainerShared
     display: flex
     align-items: center
     justify-content: space-between
     background-color: inherit
     width: calc( 1400px * 0.88  )
 
-.navLogo
+.navContainerHead
+    @extend %navContainerShared
+
+
+
+.navLogoDark
     display: flex
     align-items: center
     justify-content: center
     color: variables.$black
-    
-    
+
 .navDesigno  
     margin-right: 10px
     font-size: variables.$heading2  
@@ -21,7 +25,7 @@
 
 .navlink
  margin-right: 1rem
- color: variables.$black
+ color: inherit
 
 
 
@@ -29,3 +33,7 @@
 
 .navlink:hover
     text-decoration: underline
+
+.navContainerFooter
+    @extend %navContainerShared
+    color: inherit
