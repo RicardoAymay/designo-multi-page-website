@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom"
-
+import './styles/app.sass'
 const App = () => {
   return (
     
-    <div> 
-      <h1>React Router</h1>
+    <div className="app"> 
       <Outlet />
     </div>
   )

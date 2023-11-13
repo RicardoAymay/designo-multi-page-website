@@ -1,0 +1,66 @@
+@use '../../styles/variables'
+
+.presentationCardContainer
+    margin-top: 100px
+    background-color: variables.$peach
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    min-height: 640px
+    border-radius: 15px
+    width: 100%
+    max-width: 1111px
+    overflow: hidden
+    justify-self: center
+    border: 1px solid red
+    
+    
+    .textSide
+        width: 500px
+        position: absolute
+        color: variables.$white
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 30px
+        margin-left: 130px
+        transform: translateX(-100%)
+        z-index: 1
+        h3
+            font-size: variables.$heading1
+            line-height:55px
+            width: 100%
+            font-weight: 500
+        p
+            font-size: variables.$heading3
+        button
+            color: variables.$black
+            height: 40px
+            width: 100px
+            border-radius: 6px
+            background-color: variables.$white
+    .imgsSide
+        width: 640px
+        height: 640px
+        position: absolute
+        overflow: hidden
+        
+        #presentationCircle
+            height: 640px
+            position: static
+            max-width: 640px
+        #presentationCell
+          position: absolute
+          
+  
+            
+        
+
+
+     
+   
+    
+        
+ 
+    
+   

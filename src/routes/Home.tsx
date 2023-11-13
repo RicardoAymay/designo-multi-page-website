@@ -1,17 +1,21 @@
-import NavBar from "../Components/NavBar/NavBar"
-import PresentationCard from '../Components/PresentationCard/PresentationCard';
 import ProjectPages from "../Components/ProjectPages/ProjectPages";
+import Footer from "../Components/Footer/Footer";
+import NavBar from "../Components/NavBar/NavBar";
+import PresentationCard from "../Components/PresentationCard/PresentationCard";
+import SoftCards from "../Components/SoftCards/SoftCards";
 
-// import {c}
 const Home = () => {
   return (
-//  container
-    <div className="container"> 
-    <NavBar />
-    <PresentationCard/>
-    <ProjectPages/>
-  </div> 
-  )
-}
+    <>
+      <NavBar nameOfClass="navContainerHead" light="dark" />
+      <main>
+        <PresentationCard />
+        <ProjectPages />
+        <SoftCards />
+      </main>
+      <Footer />
+    </>
+  );
+};
 
-export default Home
+export default Home;

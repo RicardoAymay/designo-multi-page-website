@@ -4,8 +4,9 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: variables.$font, sans-serif
-    color: red
+    font-family: variables.$font //removi o sans serif pois não tava fazendo efeito
+    text-decoration: none //adicionei esse
+    //removi a cor padrão de texto pois tava dando conflito. Qualquer coisa trocamos na variável
 
 input
     outline: none
@@ -21,6 +22,20 @@ ul, ol, li
     list-style: none
 
 #root
-    width: 100%
-    max-width: 1400px
+    width: 90vw
+    min-height: 100vh
+    min-width: 375px
+    max-width: 1440px
     margin: 0 auto
+    
+    
+
+body
+    width: 100vw
+    min-height: 100vh
+   
+
+       
+  
+
+   
