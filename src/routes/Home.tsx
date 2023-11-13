@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import PresentationCard from "../Components/PresentationCard/PresentationCard";
 import SoftCards from "../Components/SoftCards/SoftCards";
@@ -5,9 +6,12 @@ import SoftCards from "../Components/SoftCards/SoftCards";
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <PresentationCard />
-      <SoftCards />
+      <NavBar nameOfClass="navContainerHead" light="dark" />
+      <main>
+        <PresentationCard />
+        <SoftCards />
+      </main>
+      <Footer />
     </>
   );
 };
