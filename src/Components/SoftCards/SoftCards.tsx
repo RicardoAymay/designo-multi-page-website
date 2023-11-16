@@ -5,8 +5,7 @@ const SoftCards = () => {
     <ul className="softCardsContainer">
       {softCards.map((el) => (
         <li key={el.title}>
-          <figure>
-            <img className="imgBg" src={el.bg} alt=""/>
+          <figure id={el.title.toLowerCase()}>
             <img src={el.src} alt="" />
           </figure>
           <p className="title">{el.title}</p>
