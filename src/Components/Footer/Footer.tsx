@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footerBottom">
           <div className="footerAddress">
             {addressInfo.map((el, i) => (
-              <p key={i}>{el}</p>
+              <p key={el.id}>{el.text}</p>
             ))}
           </div>
           <div className="footerContact">
