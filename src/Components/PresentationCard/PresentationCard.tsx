@@ -1,6 +1,7 @@
 import cellphone from "../../assets/home/desktop/image-hero-phone.png";
 import circle from "../../assets/home/desktop/bg-pattern-hero-home.svg";
 import "./presentationCard.sass";
+import Buttons from "../Buttons/Buttons";
 
 const PresentationCard = () => {
   return (
@@ -13,7 +14,7 @@ const PresentationCard = () => {
           Find out more about our services.
         </p>
 
-        <button>Learn More</button>
+        <Buttons buttonType="button" classname="baseWhite" buttonText="Learn More"/>
       </div>
       <figure className="imgsSide">
         <img className="cellAndcircle" id="presentationCell" src={cellphone} alt="This is technology to see the art!" />

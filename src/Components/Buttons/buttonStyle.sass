@@ -1,0 +1,22 @@
+@use '../../styles/variables'
+%sharedButton
+    color: variables.$black
+    height: 40px
+    width: 100px
+    border-radius: 6px
+    background-color: variables.$white
+    transition: all
+    transition-duration: 150ms
+
+.baseWhite
+   @extend %sharedButton
+.baseWhite:hover
+    background-color: variables.$lightPeach
+    color: variables.$white
+
+.basePeach
+    @extend %sharedButton
+    color: variables.$white
+    background-color: variables.$peach
+.basePeach:hover
+    background-color: variables.$lightPeach

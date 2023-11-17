@@ -1,3 +1,4 @@
+import FloatCard from "../Components/Floatcard/FloatCard";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import PresentationCard from "../Components/PresentationCard/PresentationCard";
@@ -10,6 +11,7 @@ const Home = () => {
       <main>
         <PresentationCard />
         <SoftCards />
+        <FloatCard/>
       </main>
       <Footer />
     </>
