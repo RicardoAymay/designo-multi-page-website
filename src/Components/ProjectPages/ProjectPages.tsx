@@ -2,7 +2,7 @@ import "./style.sass";
 import webDesignImage from "../../assets/home/desktop/image-web-design-large.jpg";
 import appDesignImage from "../../assets/home/desktop/image-app-design.jpg";
 import graphicDesignImage from "../../assets/home/desktop/image-graphic-design.jpg";
-// import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 const ProjectPages = () => {
@@ -12,23 +12,24 @@ const ProjectPages = () => {
     <div className="projectPages">
       <div className="web">
         <img src={webDesignImage} alt="" />
+
         <div>
           <h1>WEB DESIGN</h1>
           <button onClick={() => navigate("/webdesign")}>
             VIEW PROJECTS
-            {/* <IoIosArrowForward/> */}
+            <IoIosArrowForward/>
           </button>
         </div>
       </div>
 
       <div className="container">
-        <div className="app">
+        <div className="appDesign">
           <img src={appDesignImage} alt="" />
           <div>
             <h1>APP DESIGN</h1>
             <button onClick={() => navigate("/appdesign")}>
               VIEW PROJECTS
-              {/* <IoIosArrowForward/> */}
+              <IoIosArrowForward/>
             </button>
           </div>
         </div>
@@ -39,7 +40,7 @@ const ProjectPages = () => {
             <h1>GRAPHIC DESIGN</h1>
             <button onClick={() => navigate("/graphic")}>
               VIEW PROJECTS
-              {/* <IoIosArrowForward/> */}
+              <IoIosArrowForward/>
             </button>
           </div>
         </div>
